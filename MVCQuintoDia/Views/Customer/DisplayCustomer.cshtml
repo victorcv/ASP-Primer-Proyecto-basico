@@ -1,0 +1,34 @@
+﻿@model MVCQuintoDia.ViewModels.CustomerViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayCustomer</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Nombre Cliente:</td>
+            <td>@Model.txtName</td>
+        </tr>
+        <tr>
+            <td>Cantidad:</td>
+            <td>@Model.txtAmount</td>
+        </tr>
+        <tr>
+            <td>Nivel de Compra del Cliente:</td>
+            <td>
+                <div style="background-color:@Model.lblCustomerLevelColor;
+                     width:228px; height:27px;">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
